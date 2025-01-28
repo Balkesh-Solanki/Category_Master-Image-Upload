@@ -1,6 +1,8 @@
 ﻿//using Category_Master.Data;
 using Category_Master.DTO;
 using Category_Master.Models;
+using Category_Master.RequestModels;
+using Category_Master.ResponseModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,64 +20,85 @@ namespace Category_Master.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
+        public async Task<ActionResult> GetCategories()
         {
-            return await _context.Categories.ToListAsync();
+            var category = await _context.Categories
+                .Select(c => new CategoryResponseModel
+                {
+                    Id = c.Id,
+                    CategoryName = c.CategoryName
+                })
+                .ToListAsync();
+
+            return Ok(category);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Category>> GetCategoryById(int id)
+        public async Task<ActionResult> GetCategoryById(int id)
+        {
+            var category = await _context.Categories
+                .Where(c => c.Id == id)
+                .Select(c => new CategoryResponseModel
+                {
+                    Id = c.Id,
+                    CategoryName = c.CategoryName
+                })
+                .FirstOrDefaultAsync();
+
+                if (category == null)
+                {
+                    return NotFound("Category not found.");
+                }
+
+            return Ok(category);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> AddCategory([FromBody] CategoryRequestModel request)
+        {
+            var category = new Category
+            {
+                CategoryName = request.CategoryName,
+            };
+
+            _context.Categories.Add(category);
+            await _context.SaveChangesAsync();
+            return Ok(new CategoryResponseModel
+            {
+                Id = category.Id,
+                CategoryName = category.CategoryName
+            });
+        }
+
+        [HttpPut]
+        public async Task<ActionResult> UpdateCategory(int id, [FromBody] CategoryRequestModel request)
         {
             var category = await _context.Categories.FindAsync(id);
 
             if (category == null)
-            {
-                return NotFound();
-            }
-            return category;
-        }
+                return NotFound("Category not found.");
 
-        [HttpPost]
-        public async Task<ActionResult<Category>> AddCategory(CategoryDto categoryDto)
-        {
-            var categories = new Category
-            {
-                CategoryName = categoryDto.CategoryName,
-            };
+            category.CategoryName = request.CategoryName;
 
-            _context.Categories.Add(categories);
-            await _context.SaveChangesAsync();
-            return Ok(categories);
-        }
-
-        [HttpPut]
-        public async Task<ActionResult> UpdateCategory(int id, CategoryDto categoryDto)
-        {
-            var categories = await _context.Categories.FindAsync(id);
-
-            if (categories == null)
-                return NotFound("User not found.");
-
-            categories.CategoryName = categoryDto.CategoryName;
-
-            _context.Entry(categories).State = EntityState.Modified;
+            _context.Entry(category).State = EntityState.Modified;
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok(new { id = category.Id });
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
-            var category = _context.Categories.Find(id);
+            var category = await _context.Categories.FindAsync(id);
             if (category == null)
             {
-                return NotFound();
+                return NotFound("Category not found.");
             }
 
             _context.Categories.Remove(category);
             await _context.SaveChangesAsync();
-            return NoContent();
+
+            return Ok(new { Id = id });
         }
     }
 }

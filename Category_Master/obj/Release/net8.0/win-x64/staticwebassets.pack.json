@@ -1,0 +1,89 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\006b6add-17a8-4160-b85e-2a746a2cb127.jpg",
+      "PackagePath": "staticwebassets\\Images\\006b6add-17a8-4160-b85e-2a746a2cb127.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\25490c75-c456-49c9-a598-97ed82c66cde.jpg",
+      "PackagePath": "staticwebassets\\Images\\25490c75-c456-49c9-a598-97ed82c66cde.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\43d5a0d8-039d-4f03-a3ec-4ea68275f4cd.jpg",
+      "PackagePath": "staticwebassets\\Images\\43d5a0d8-039d-4f03-a3ec-4ea68275f4cd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\4448aeaa-637e-421f-aa5c-da1776195698.jpg",
+      "PackagePath": "staticwebassets\\Images\\4448aeaa-637e-421f-aa5c-da1776195698.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\4d539fab-d89f-41a1-8555-5d5357b39acb.jpg",
+      "PackagePath": "staticwebassets\\Images\\4d539fab-d89f-41a1-8555-5d5357b39acb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\5b5d3a17-db33-4505-b875-febb7a1c6e45.jpg",
+      "PackagePath": "staticwebassets\\Images\\5b5d3a17-db33-4505-b875-febb7a1c6e45.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\69cf8d52-f9d5-4bbc-bc79-f2b017f97f39.jpg",
+      "PackagePath": "staticwebassets\\Images\\69cf8d52-f9d5-4bbc-bc79-f2b017f97f39.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\71dfd80d-0734-45f4-a81a-15752ec244bc.jpg",
+      "PackagePath": "staticwebassets\\Images\\71dfd80d-0734-45f4-a81a-15752ec244bc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\72d8e1c6-ed23-4ab6-8923-4977417d0c34.jpg",
+      "PackagePath": "staticwebassets\\Images\\72d8e1c6-ed23-4ab6-8923-4977417d0c34.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\7b6735a7-df16-4e8e-bcc1-f06b1beaf067.jpg",
+      "PackagePath": "staticwebassets\\Images\\7b6735a7-df16-4e8e-bcc1-f06b1beaf067.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\8be5ae02-42da-4c81-844c-7c10434a4655.jpg",
+      "PackagePath": "staticwebassets\\Images\\8be5ae02-42da-4c81-844c-7c10434a4655.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\da0cc313-908b-4ee4-9f39-204827fe9821.jpg",
+      "PackagePath": "staticwebassets\\Images\\da0cc313-908b-4ee4-9f39-204827fe9821.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\fb0c7021-30f4-43e9-ac6c-e48cbb5e9b7f.jpg",
+      "PackagePath": "staticwebassets\\Images\\fb0c7021-30f4-43e9-ac6c-e48cbb5e9b7f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\images\\5293e797-72ab-4801-a059-295c0ca79e45.jpg",
+      "PackagePath": "staticwebassets\\Images\\images\\5293e797-72ab-4801-a059-295c0ca79e45.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\images\\7c4c6625-675d-418e-816a-60da840784ca.jpg",
+      "PackagePath": "staticwebassets\\Images\\images\\7c4c6625-675d-418e-816a-60da840784ca.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\images\\91af8842-5fa5-4e6a-8992-44a02f2428c0.jpg",
+      "PackagePath": "staticwebassets\\Images\\images\\91af8842-5fa5-4e6a-8992-44a02f2428c0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Reyna\\source\\repos\\Category_Master\\Category_Master\\wwwroot\\Images\\images\\b61b8079-fb2b-4121-ad7a-cb3bc4559f42.jpg",
+      "PackagePath": "staticwebassets\\Images\\images\\b61b8079-fb2b-4121-ad7a-cb3bc4559f42.jpg"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x64\\staticwebassets\\msbuild.Category_Master.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x64\\staticwebassets\\msbuild.build.Category_Master.props",
+      "PackagePath": "build\\Category_Master.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x64\\staticwebassets\\msbuild.buildMultiTargeting.Category_Master.props",
+      "PackagePath": "buildMultiTargeting\\Category_Master.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x64\\staticwebassets\\msbuild.buildTransitive.Category_Master.props",
+      "PackagePath": "buildTransitive\\Category_Master.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
